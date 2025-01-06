@@ -1,0 +1,75 @@
+{
+  "playerInfo": {
+    "name": "TRip",
+    "score": 45,
+    "inventory": {
+      "Key Chain": [
+        {
+          "type": "Gift",
+          "quantity": 5
+        }
+      ],
+      "Apple": [
+        {
+          "type": "Food",
+          "quantity": 5
+        }
+      ],
+      "Portrait": [
+        {
+          "type": "Gift",
+          "quantity": 5
+        }
+      ],
+      "Cheese": [
+        {
+          "type": "Food",
+          "quantity": 4
+        }
+      ],
+      "Coffee": [
+        {
+          "type": "Food",
+          "quantity": 5
+        }
+      ],
+      "Bowl": [
+        {
+          "type": "Gift",
+          "quantity": 4
+        }
+      ],
+      "Collar": [
+        {
+          "type": "Gift",
+          "quantity": 5
+        }
+      ],
+      "Bread": [
+        {
+          "type": "Food",
+          "quantity": 5
+        }
+      ],
+      "Banana": [
+        {
+          "type": "Food",
+          "quantity": 5
+        }
+      ]
+    }
+  },
+  "petInfo": {
+    "petType": "Kuromametchi",
+    "name": "TRip",
+    "stats": {
+      "health": 100,
+      "sleep": 103,
+      "fullness": 78,
+      "happiness": 99,
+      "fullnessDepletionRate": 0.4,
+      "happinessDepletionRate": 0.30000000000000004,
+      "sleepDepletionRate": 0.3
+    }
+  }
+}

@@ -1,0 +1,346 @@
+/* Global Style */
+/* Ensures that all text elements in the application use the "Press Start 2P" font for a pixelated retro aesthetic. */
+* {
+    -fx-font-family: "Press Start 2P", monospace;
+}
+
+.button:hover, .button:focused{
+    -fx-border-color: #000; /* Optional border for emphasis */
+    -fx-border-width: 3;
+}
+
+.petButton {
+    -fx-background-color: transparent; /* Invisible background */
+    -fx-text-fill: transparent;       /* Invisible text */
+    -fx-border-color: transparent;   /* No border by default */
+    -fx-border-width: 2;             /* Define border width for hover */
+    -fx-cursor: hand;                /* Show pointer cursor on hover */
+}
+
+.petButton:hover {
+    -fx-border-color: #000;
+    -fx-border-width: 5;
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-border-style: dotted;
+}
+
+.gameplayButton {
+    -fx-background-color: transparent; /* Invisible background */
+    -fx-text-fill: transparent;       /* Invisible text */
+    -fx-border-color: transparent;   /* No border by default */
+    -fx-border-width: 2;             /* Define border width for hover */
+    -fx-cursor: hand;                /* Show pointer cursor on hover */
+}
+
+.gameplayButton:hover {
+    -fx-border-color: #000;
+    -fx-border-width: 2;
+    -fx-border-radius: 2; /* Rounded corners */
+    -fx-border-style: dashed;
+}
+
+
+/* Style for main menu buttons */
+/* Sets a fixed size, background image, and font styling for the main menu buttons to ensure a consistent retro look. */
+.mainMenuButton {
+    -fx-pref-width: 355px; /* Button width */
+    -fx-pref-height: 77px; /* Button height */
+    -fx-background-image: url('/Sprites/button.png'); /* Button background image */
+    -fx-background-size: cover; /* Scale the background image to cover the button */
+    -fx-font-size: 30px; /* Font size for button text */
+    -fx-font-weight: bold; /* Makes the text bold */
+    -fx-text-fill: black; /* Text color */
+    -fx-cursor: hand;                /* Show pointer cursor on hover */
+}
+
+
+.parentalControlButton {
+    -fx-pref-width: 500px; /* Button width */
+    -fx-pref-height: 77px; /* Button height */
+    -fx-background-image: url('/Sprites/returnSky.png'); /* Button background image */
+    -fx-background-size: cover; /* Scale the background image to cover the button */
+    -fx-font-size: 25px; /* Font size for button text */
+    -fx-font-weight: bold; /* Makes the text bold */
+    -fx-text-fill: black; /* Text color */
+    -fx-cursor: hand;                /* Show pointer cursor on hover */
+}
+
+/* Style for the return button */
+/* Similar to main menu buttons but uses a different background image and slightly larger font size for emphasis. */
+.returnMenuButton {
+    -fx-pref-width: 355px; /* Button width */
+    -fx-pref-height: 77px; /* Button height */
+    -fx-background-image: url('/Sprites/returnSky.png'); /* Button background image */
+    -fx-background-size: cover; /* Scale the background image to cover the button */
+    -fx-font-size: 35px; /* Font size for button text */
+    -fx-font-weight: bold; /* Makes the text bold */
+    -fx-text-fill: black; /* Text color */
+    -fx-cursor: hand;                /* Show pointer cursor on hover */
+}
+
+/* Custom font face */
+/* Loads the "Press Start 2P" font from the specified file for use throughout the application. */
+@font-face {
+    font-family: "Press Start 2P";
+    src: url("/Sprites/PressStart2P-Regular.ttf") format("truetype");
+}
+
+/* Style for the settings slider */
+/* Configures the slider dimensions and appearance. */
+.settingsSlider {
+    -fx-pref-width: 300px; /* Slider width */
+    -fx-pref-height: 77px; /* Slider height */
+}
+
+/* Style for the slider track */
+/* Adds a gradient background and rounded corners to the slider track for a sleeker appearance. */
+.settingsSlider .track {
+    -fx-background-color: linear-gradient(to right, #FF99CC, #FF007F); /* Gradient from vibrant pink to light pink */
+    -fx-background-radius: 5; /* Rounded corners for the track */
+    -fx-padding: 5; /* Padding for a sleeker appearance */
+}
+
+/* Style for the slider knob (thumb) */
+/* Configures the slider knob with a vibrant pink color, circular shape, and border. */
+.settingsSlider .thumb {
+    -fx-background-color: #FF007F; /* Vibrant pink color for the knob */
+    -fx-border-color: #000000; /* Black border for the knob */
+    -fx-border-radius: 50%; /* Makes the knob circular */
+    -fx-padding: 10; /* Adjust size of the knob */
+    -fx-cursor: hand;                /* Show pointer cursor on hover */
+}
+
+/* Style for the checkbox in the settings */
+/* Configures the appearance of the settings checkbox. */
+.settingsCheckbox {
+    -fx-font-size: 30px; /* Font size for checkbox label */
+    -fx-pref-width: 355px; /* Checkbox width */
+    -fx-pref-height: 77px; /* Checkbox height */
+    -fx-font-weight: bold; /* Makes the text bold */
+    -fx-text-fill: black; /* Text color */
+}
+
+/* Style for the slider tick labels */
+/* Configures the tick labels on the slider to use the "Press Start 2P" font with a pixelated retro appearance. */
+.settingsSlider .tick-label {
+    -fx-font-family: "Press Start 2P", monospace; /* Font family for tick labels */
+    -fx-font-size: 20px; /* Font size for tick labels */
+    -fx-fill: black; /* Text color */
+}
+
+/* Style for the sound level label */
+/* Configures the label below the slider to display the current sound level with a retro aesthetic. */
+.soundLevelLabel {
+    -fx-font-size: 30px; /* Font size for the label */
+    -fx-text-fill: black; /* Text color */
+}
+
+/* Style for the checkbox box */
+/* Adds a custom background image to the checkbox and ensures it scales to fit. */
+.settingsCheckbox .box {
+    -fx-background-color: url("/Sprites/settings.png"); /* Custom background image */
+    -fx-background-size: cover; /* Scale the image to fit */
+    -fx-border-color: black; /* Black border for the checkbox */
+}
+
+/* Style for the selected checkbox */
+/* Adds a custom background image for the selected state of the checkbox. */
+.settingsCheckbox:selected .box {
+    -fx-background-color: url("/Sprites/settings.png"); /* Background for selected state */
+}
+
+.promptButton {
+    -fx-pref-width: 150px; /* Adjust width */
+    -fx-pref-height: 50px; /* Adjust height */
+    -fx-background-image: url('/Sprites/passButton.png'); /* Background image */
+    -fx-background-size: cover; /* Scale the image to fit */
+    -fx-font-size: 20px; /* Font size */
+    -fx-text-fill: black; /* Text color */
+    -fx-font-weight: bold; /* Make the text bold */
+    -fx-cursor: hand;                /* Show pointer cursor on hover */
+}
+
+.promptPasswordField {
+    -fx-pref-width: 500px; /* Set the width of the password field */
+    -fx-font-size: 18px; /* Font size for the input text */
+    -fx-padding: 5px; /* Add padding for a clean look */
+    -fx-background-image: url('/Sprites/passButton.png'); /* Background color for the input */
+    -fx-border-color: black; /* Border color */
+    -fx-border-width: 2px; /* Border thickness */
+}
+
+.promptLabel {
+    -fx-font-size: 25px; /* Font size for the label */
+    -fx-text-fill: black; /* Text color */
+    -fx-font-weight: bold; /* Bold text for the label */
+}
+
+/* Style for parental controls container */
+.parentalControlsContainer {
+    -fx-padding: 20px;
+    -fx-alignment: center;
+    -fx-spacing: 20px;
+}
+
+/* Style for buttons */
+.parentalControlsButton {
+    -fx-font-size: 18px;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;                /* Show pointer cursor on hover */
+}
+
+.inventoryHeader {
+    -fx-font-size: 20px; /* Increases the font size */
+    -fx-text-fill: white; /* Sets the text color to white */
+    -fx-font-weight: bold; /* Makes the text bold */
+    -fx-alignment: center; /* Centers the text */
+    -fx-padding: 15; /* Adds some padding around the label */
+}
+
+.inventoryLabel {
+    -fx-font-size: 14px; /* Increases the font size */
+    -fx-text-fill: black; /* Sets the text color to white */
+    -fx-font-weight: bold; /* Makes the text bold */
+    -fx-alignment: center; /* Centers the text */
+    -fx-padding: 15; /* Adds some padding around the label */
+}
+
+.inventory{
+-fx-background-image: url('/Sprites/inventoryBackground.png');
+-fx-background-size: cover;
+-fx-background-repeat: no-repeat;
+-fx-border-color: black; /* Sets the border color to black */
+-fx-border-width: 2; /* Sets the border thickness */
+-fx-padding: 10; /* Adds padding inside the container */
+}
+
+/* Styling the vertical scrollbar */
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent; /* Make the background transparent */
+}
+
+.scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-image: url('/Sprites/returnSky.png'); /* Green color for the thumb */
+    -fx-background-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Styling the horizontal scrollbar (if needed) */
+.scroll-pane .scroll-bar:horizontal {
+    -fx-background-color: transparent; /* Transparent horizontal scrollbar background */
+}
+
+.scroll-pane .scroll-bar:horizontal .thumb {
+    -fx-background-image: url('/Sprites/returnSky.png'); /* Green color for the thumb */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+/* Styling the scrollbar track (optional) */
+.scroll-pane .scroll-bar .track {
+    -fx-background-color: #D3D3D3; /* Light grey for the track */
+}
+
+/* Dialog buttons (specific to dialog boxes) */
+.dialog-pane .button-bar .button {
+    -fx-background-image: url('/Sprites/passButton.png'); /* Background image for dialog buttons */
+    -fx-background-size: cover; /* Scale the image to fit */
+    -fx-font-size: 50px; /* Match button font size to your style */
+    -fx-font-weight: bold; /* Bold text for buttons */
+    -fx-text-fill: black; /* Retro black text */
+    -fx-cursor: hand; /* Pointer cursor */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 5px 15px; /* Padding for button text */
+}
+
+/* Dialog button hover effect */
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: #FFC107; /* Change background color on hover (optional if no hover image) */
+    -fx-border-color: #000; /* Add a black border for emphasis */
+    -fx-border-width: 3px; /* Increase border width */
+}
+
+/* Dialog button pressed (active) state */
+.dialog-pane .button-bar .button:pressed {
+    -fx-background-color: #FF5722; /* Slightly darker shade for pressed state */
+    -fx-text-fill: white; /* Change text color when pressed */
+}
+
+/* Dialog content area styling */
+.dialog-pane .content {
+    -fx-font-size: 16px; /* Match dialog text to your application style */
+    -fx-text-fill: black; /* Retro black text color */
+    -fx-padding: 15px; /* Add padding to the content area */
+}
+
+/* Dialog header styling */
+.dialog-pane .header-panel {
+    -fx-background-color: #4CAF50; /* Green header background */
+    -fx-font-size: 20px; /* Header font size */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-text-fill: white; /* White text color */
+    -fx-padding: 10px; /* Add padding inside header */
+    -fx-alignment: center; /* Center-align header text */
+}
+
+/* Dialog border styling */
+.dialog-pane {
+    -fx-background-color: #f0f0f0; /* Light grey background for the dialog */
+    -fx-border-color: black; /* Black border */
+    -fx-border-width: 20px; /* Border thickness */
+    -fx-border-radius: 10px; /* Rounded dialog corners */
+}
+
+/* Custom Alert Dialog Styling */
+.custom-alert {
+    -fx-background-color: #FFFACD; /* Light yellow background to match a warning theme */
+    -fx-border-color: black; /* Black border for a retro feel */
+    -fx-border-width: 3px; /* Bold border */
+    -fx-border-radius: 10px; /* Rounded corners for the dialog */
+    -fx-padding: 20px; /* Padding inside the alert */
+}
+
+/* Header text styling */
+.custom-alert .header-panel {
+    -fx-background-color: #FFA500; /* Orange header for emphasis */
+    -fx-font-size: 22px; /* Larger font size for header */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-text-fill: white; /* White text for header */
+    -fx-alignment: center; /* Center-align header text */
+}
+
+/* Content area styling */
+.custom-alert .content {
+    -fx-font-size: 18px; /* Match dialog text to your retro style */
+    -fx-text-fill: black; /* Retro black text color */
+    -fx-padding: 15px; /* Add padding to the content area */
+}
+
+/* Button styling within the alert */
+.custom-alert .button-bar .button {
+    -fx-background-image: url('/Sprites/passButton.png'); /* Background image for dialog buttons */
+    -fx-background-size: cover; /* Scale the image to fit */
+    -fx-font-size: 16px; /* Match button font size to your style */
+    -fx-font-weight: bold; /* Bold text for buttons */
+    -fx-text-fill: black; /* Retro black text */
+    -fx-cursor: hand; /* Pointer cursor */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 5px 15px; /* Padding for button text */
+}
+
+/* Button hover effect */
+.custom-alert .button-bar .button:hover {
+    -fx-background-color: #FFC107; /* Change background color on hover */
+    -fx-border-color: #000; /* Add a black border for emphasis */
+    -fx-border-width: 2px; /* Increase border width */
+}
+
+/* Button pressed (active) state */
+.custom-alert .button-bar .button:pressed {
+    -fx-background-color: #FF5722; /* Slightly darker shade for pressed state */
+    -fx-text-fill: white; /* Change text color when pressed */
+}
+
+

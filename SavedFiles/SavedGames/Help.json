@@ -1,0 +1,75 @@
+{
+  "playerInfo": {
+    "name": "Help",
+    "score": 65,
+    "inventory": {
+      "Key Chain": [
+        {
+          "type": "Gift",
+          "quantity": 5
+        }
+      ],
+      "Apple": [
+        {
+          "type": "Food",
+          "quantity": 5
+        }
+      ],
+      "Portrait": [
+        {
+          "type": "Gift",
+          "quantity": 5
+        }
+      ],
+      "Cheese": [
+        {
+          "type": "Food",
+          "quantity": 4
+        }
+      ],
+      "Coffee": [
+        {
+          "type": "Food",
+          "quantity": 4
+        }
+      ],
+      "Bowl": [
+        {
+          "type": "Gift",
+          "quantity": 5
+        }
+      ],
+      "Collar": [
+        {
+          "type": "Gift",
+          "quantity": 4
+        }
+      ],
+      "Bread": [
+        {
+          "type": "Food",
+          "quantity": 5
+        }
+      ],
+      "Banana": [
+        {
+          "type": "Food",
+          "quantity": 5
+        }
+      ]
+    }
+  },
+  "petInfo": {
+    "petType": "Lovelitchi",
+    "name": "Help",
+    "stats": {
+      "health": 100,
+      "sleep": 102,
+      "fullness": 77,
+      "happiness": 100,
+      "fullnessDepletionRate": 0.6,
+      "happinessDepletionRate": 0.0,
+      "sleepDepletionRate": 0.6
+    }
+  }
+}

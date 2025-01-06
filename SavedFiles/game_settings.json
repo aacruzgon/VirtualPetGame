@@ -1,0 +1,23 @@
+{
+  "settings": {
+    "sound": true,
+    "parentalControls": {
+      "enabled": false,
+      "allowedPlayHours": {
+        "start": "08:00",
+        "end": "09:00"
+      }
+    },
+    "playStatistics": {
+      "totalPlayTime": 23.2588,
+      "averageSessionTime": 4.65176,
+      "sessionDurations": [
+        5.5061,
+        0.51023334,
+        8.6211,
+        8.3791,
+        0.24226667
+      ]
+    }
+  }
+}
